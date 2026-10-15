@@ -1,5 +1,7 @@
 # Mie Bakso Nakal
 
+GitHub Pages menggunakan branch `gh-pages` dengan berkas website di root. Untuk memperbarui deployment setelah mengubah `dist/`, commit perubahan di `main`, lalu jalankan `git subtree split --prefix=dist -b gh-pages-update` dan `git push github gh-pages-update:gh-pages`. Push biasa tanpa force menjaga riwayat deployment.
+
 Website company profile statis sesuai PRD. Buka `dist/index.html` atau layani direktori `dist` menggunakan server HTTP statis.
 
 Menu dan harga di `dist/app.js` merupakan contoh. Foto makanan dari Wikimedia Commons dan foto teh dari Unsplash adalah ilustrasi, bukan foto produk resmi. Aset ditampung lokal dalam `dist/assets/` dan dioptimalkan menjadi WebP. Ganti dengan foto produk sendiri sebelum peluncuran bisnis. Kontak, akun sosial, alamat, jam buka, dan lokasi Maps belum disediakan sehingga tidak dibuat-buat. Kemitraan ditampilkan sebagai rencana.

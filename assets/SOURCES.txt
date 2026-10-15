@@ -1,0 +1,28 @@
+All photographs are food illustrations, not official brand product photos.
+
+mie-ayam.jpg / mie-ayam.webp
+Mie Ayam Khas Solo Toping Ayam by Sekar Jarwo Soekarno
+https://commons.wikimedia.org/wiki/File:Mie_Ayam_Khas_Solo_Toping_Ayam.jpg
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Changes: auto-rotated, cropped, resized and encoded as WebP.
+
+mie-ayam-bakso.jpg / mie-ayam-bakso.webp
+Bakso Mie Ayam Indonesian Meatball and Noodle Soup by Bajinra
+https://commons.wikimedia.org/wiki/File:Bakso_Mie_Ayam_Indonesian_Meatball_and_Noodle_Soup.jpg
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+Changes: cropped, resized and encoded as WebP.
+
+bakso.jpg / bakso.webp
+Bakso Indonesian Meatball Soup from Solo by Bajinra
+https://commons.wikimedia.org/wiki/File:Bakso_Indonesian_Meatball_Soup_from_Solo.jpg
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+Changes: cropped, resized and encoded as WebP.
+
+es-teh.jpg / es-teh.webp
+https://images.unsplash.com/photo-1556679343-c7306c1976bc
+Unsplash License: https://unsplash.com/license
+Changes: cropped, resized and encoded as WebP.
+
+Anton: https://fonts.google.com/specimen/Anton
+IBM Plex Sans: https://fonts.google.com/specimen/IBM+Plex+Sans
+Font OFL license texts are included in this directory.

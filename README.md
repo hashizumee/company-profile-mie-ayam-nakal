@@ -6,9 +6,9 @@ Menu dan harga di `dist/app.js` merupakan contoh. Foto makanan dari Wikimedia Co
 
 Formulir memvalidasi input dan menghasilkan berkas pesan untuk diunduh secara lokal; tidak mengirim atau menyimpan data di server. Aktifkan kanal bisnis dan pengiriman formulir setelah kontak resmi tersedia. Website tidak mengumpulkan analitik.
 
-Desain mengikuti skill Hallmark dari https://github.com/Nutlope/hallmark dengan bentuk Catalogue, navigasi masthead N6, footer kolofon Ft4, dan warna brand dari PRD. CSS aktif: `dist/hallmark.css`, token aktif: `dist/tokens.css`. Salinan portabel token tersedia di `tokens.css`. Stylesheet versi sebelumnya tetap tersimpan di `dist/style.css`.
+Desain modern mengikuti arahan revisi pengguna: hero produk dengan gambar mangkuk transparan, navigasi ringkas, kartu menu membulat, bagian omzet dengan kontras gelap, serta animasi yang dapat dijeda. Prinsip Hallmark dari https://github.com/Nutlope/hallmark tetap diterapkan untuk hierarki, tipografi, token, responsivitas, dan aksesibilitas. CSS aktif: `dist/modern.css`, token aktif: `dist/modern-tokens.css`. Salinan portabel token tersedia di `tokens.css`. Stylesheet versi sebelumnya tetap tersimpan.
 
-Font Anton dan IBM Plex Sans ditampung lokal dengan lisensi OFL masing-masing. Animasi dibatasi pada entrance awal, crossfade filter, serta pembaruan angka simulator; mendukung `prefers-reduced-motion`.
+Font Manrope dan IBM Plex Sans ditampung lokal dengan lisensi OFL masing-masing. Hero menggunakan ilustrasi makanan yang dibuat dengan imagegen, bukan foto produk resmi. Animasi meliputi entrance hero, gerakan lembut mangkuk dengan tombol jeda, reveal satu kali saat scroll, crossfade filter, serta pembaruan angka simulator; mendukung `prefers-reduced-motion`. Menu ponsel dapat dibuka, ditutup lewat pilihan navigasi atau tombol Escape.
 
 Simulator menghitung outlet × porsi per outlet per hari × Rp18.000 × 30 hari. Asumsi PRD (50 outlet dan 120 porsi) menghasilkan Rp3,24 miliar omzet bulanan. Rp20 juta profit per outlet dan Rp1 miliar profit gabungan adalah target terpisah; simulator tidak memodelkan biaya.
 

@@ -1,43 +1,14 @@
-/* Hallmark tokens · brand adaptation of Sport · light / display-condensed / warm */
-:root {
-  --color-paper: oklch(96.6% .023 80);
-  --color-paper-2: oklch(92.8% .029 80);
-  --color-paper-3: oklch(89% .027 80);
-  --color-ink: oklch(24% .018 45);
-  --color-ink-2: oklch(42% .02 45);
-  --color-muted: oklch(47% .019 45);
-  --color-rule: oklch(75% .026 70);
-  --color-accent: oklch(48% .16 29);
-  --color-accent-ink: oklch(98% .014 80);
-  --color-focus: oklch(48% .16 29);
-  --color-transparent: transparent;
-  --font-display: 'Anton', 'Impact', sans-serif;
-  --font-body: 'IBM Plex Sans', sans-serif;
-  --space-3xs: .25rem;
-  --space-2xs: .5rem;
-  --space-xs: .75rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
-  --space-4xl: 8rem;
-  --page-gutter: clamp(1rem, 4vw, 4rem);
-  --page-width: 1360px;
-  --text-xs: .75rem;
-  --text-sm: .875rem;
-  --text-md: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
-  --text-2xl: 2rem;
-  --text-heading: clamp(2.5rem, 4.2vw, 4.5rem);
-  --ease-out: cubic-bezier(.16, 1, .3, 1);
-  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
-  --dur-micro: 120ms;
-  --dur-short: 220ms;
-  --dur-long: 420ms;
-  --rule-hair: 1px;
-  --rule-strong: 2px;
-  --radius-input: 0;
+:root{
+--color-paper:oklch(99% .004 85);--color-paper-2:oklch(97% .008 80);--color-paper-3:oklch(94% .012 80);
+--color-ink:oklch(22% .013 50);--color-ink-2:oklch(44% .012 50);--color-muted:oklch(48% .012 50);--color-rule:oklch(88% .009 80);
+--color-accent:oklch(49% .175 28);--color-accent-ink:oklch(99% .004 85);--color-accent-soft:oklch(95% .026 35);
+--color-dark:oklch(23% .012 50);--color-dark-muted:oklch(76% .013 70);--color-dark-rule:oklch(44% .012 50);--color-focus:oklch(55% .18 28);
+--color-transparent:transparent;--color-shadow:oklch(25% .016 40 / .06);--color-photo-shade:oklch(16% .01 50 / .55);
+--font-display:'Manrope',sans-serif;--font-body:'IBM Plex Sans',sans-serif;
+--space-3xs:.25rem;--space-2xs:.5rem;--space-xs:.75rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2rem;--space-xl:3rem;--space-2xl:4rem;--space-3xl:6rem;--space-4xl:8rem;
+--page-gutter:clamp(1.25rem,5vw,4.5rem);--page-width:1320px;
+--text-xs:.75rem;--text-sm:.875rem;--text-md:1rem;--text-lg:1.125rem;--text-xl:1.5rem;--text-2xl:2rem;--text-heading:clamp(2rem,3.5vw,3rem);
+--radius-pill:999px;--radius-card:24px;--radius-section:36px;--radius-input:12px;
+--ease-out:cubic-bezier(.16,1,.3,1);--ease-in-out:cubic-bezier(.65,0,.35,1);--dur-micro:120ms;--dur-short:220ms;--dur-long:650ms;
+--rule-hair:1px;--z-nav:100;--z-dropdown:110;
 }

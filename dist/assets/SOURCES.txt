@@ -1,5 +1,13 @@
 All photographs are food illustrations, not official brand product photos.
 
+hero-bowl-modern.webp
+Original food illustration generated with the imagegen tool for this project.
+Transparent background; resized and encoded as WebP with transparency preserved.
+Used as hero artwork and the illustrative Mie Ayam Bakso menu visual.
+
+Manrope: https://fonts.google.com/specimen/Manrope
+Font OFL license text is included in manrope-OFL.txt.
+
 mie-ayam.jpg / mie-ayam.webp
 Mie Ayam Khas Solo Toping Ayam by Sekar Jarwo Soekarno
 https://commons.wikimedia.org/wiki/File:Mie_Ayam_Khas_Solo_Toping_Ayam.jpg

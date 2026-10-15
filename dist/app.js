@@ -2,7 +2,7 @@
 const ASSET_BASE='assets/';
 const menu=[
  {name:'Mie Ayam Original',category:'mie',price:15000,description:'Mie, ayam berbumbu, sayuran, dan kuah hangat.',image:'mie-ayam.webp',tag:'Klasik'},
- {name:'Mie Ayam Bakso',category:'mie',price:20000,description:'Mie ayam dengan bakso. Dua pilihan, satu mangkuk.',image:'mie-ayam-bakso.webp',tag:'Rekomendasi konsep'},
+ {name:'Mie Ayam Bakso',category:'mie',price:20000,description:'Mie ayam dengan bakso. Dua pilihan, satu mangkuk.',image:'hero-bowl-modern.webp',tag:'Rekomendasi konsep'},
  {name:'Bakso Kuah',category:'bakso',price:18000,description:'Bakso, kuah gurih, dan pelengkap. Nikmati hangat.',image:'bakso.webp',tag:'Hangat & gurih'},
  {name:'Es Teh',category:'minuman',price:5000,description:'Teh dingin untuk menemani mangkuk pilihanmu.',image:'es-teh.webp',tag:'Minuman'}
 ];
@@ -11,7 +11,7 @@ function render(category='semua',animate=false){
  const items=menu.filter(item=>category==='semua'||item.category===category);
  const grid=document.querySelector('#menu-grid');
  grid.replaceChildren(...items.map(item=>{
-  const article=document.createElement('article');article.className='menu-card';
+  const article=document.createElement('article');article.className='menu-card'+(item.name==='Mie Ayam Bakso'?' menu-card-featured':'');
   const index=menu.indexOf(item);const number=String(index+1).padStart(2,'0');
   article.innerHTML=`<div class="food-image"><!-- TODO: Replace with official product photo, target size: 800x800 --><img src="${ASSET_BASE}${item.image}" alt="Foto ilustrasi ${item.name}, bukan produk resmi" width="800" height="800" ${index<2?'fetchpriority="high"':'loading="lazy"'}><span class="dish-index">${number}</span></div><div class="menu-card-head"><h3>${item.name}</h3><span class="price">${rupiahMenu.format(item.price)}</span></div><p>${item.description}</p><a class="dish-action" href="#pesan" data-menu="${item.name}" aria-label="Informasi pemesanan ${item.name}"><span>${item.tag}</span>Info pesan ↗</a>`;
   return article;
@@ -39,3 +39,14 @@ document.querySelectorAll('#name,#message').forEach(input=>{
  input.addEventListener('invalid',()=>{input.dataset.touched='true';check()});
 });
 document.querySelector('#topic').addEventListener('change',()=>{document.querySelector('#form-result').hidden=true});
+
+// Modern navigation, motion controls, and one-time section transitions.
+const navToggle=document.querySelector('#nav-toggle'),mainNav=document.querySelector('#main-nav');
+function closeNav(){navToggle.setAttribute('aria-expanded','false');mainNav.classList.remove('is-open')}
+navToggle.addEventListener('click',()=>{const open=navToggle.getAttribute('aria-expanded')!=='true';navToggle.setAttribute('aria-expanded',String(open));mainNav.classList.toggle('is-open',open)});
+mainNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeNav));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&navToggle.getAttribute('aria-expanded')==='true'){closeNav();navToggle.focus()}});
+document.addEventListener('click',event=>{if(!mainNav.contains(event.target)&&!navToggle.contains(event.target))closeNav()});
+const motionToggle=document.querySelector('#motion-toggle');motionToggle.addEventListener('click',()=>{const paused=document.body.classList.toggle('motion-paused');motionToggle.setAttribute('aria-pressed',String(paused));motionToggle.textContent=paused?'Putar animasi':'Jeda animasi'});
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+if('IntersectionObserver' in window&&!motionPreference.matches){const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(element=>{element.classList.add('will-reveal');revealObserver.observe(element)});motionPreference.addEventListener('change',()=>{if(motionPreference.matches)document.querySelectorAll('.will-reveal').forEach(element=>element.classList.add('is-visible'))})}
